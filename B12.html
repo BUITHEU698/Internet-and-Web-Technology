@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    form {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    table {
+        width: 100%;
+        margin: 0 auto;
+        background-image: url(img/khuyen-mai.png);
+        background-repeat: no-repeat;
+        background-color: rgb(205, 255, 255);
+        box-shadow: 4px 4px 7px rgb(0, 110, 255);
+        border-radius: 10px;
+    }
+    
+    td {
+        padding-left: 5px;
+        color: rgb(0, 1, 252);
+    }
+    
+    tr {
+        height: 50px;
+    }
+    
+    h1 {
+        text-align: center;
+        text-shadow: rgb(0, 4, 255) 2px 2px 0.5em, rgb(58, 56, 288) 2px 0px;
+        color: white;
+    }
+    
+    input,
+    textarea,
+    select {
+        padding: 3px;
+        border-radius: 10px;
+        outline: none;
+        background-color: rgba(163, 205, 255);
+        border: 1px dotted rgb(104, 49, 255);
+    }
+</style>
+<script>
+    function ValidControl(ctrl, msg) {
+
+        if (ctrl.value == "" || ctrl.value == null) {
+            alert(msg)
+            ctrl.focus()
+            return false
+        }
+        return true
+    }
+
+    function ValidForm() {
+        var kq = ValidControl(txthoten, 'Bạn chưa nhập tên');
+        if (kq) {
+            kq = ValidControl(txtdiachi, "Bạn chưa nhập địa chỉ")
+        }
+        if (kq) {
+            kq = ValidControl(txtsdt, "Bạn chưa nhập số điện thoại")
+        }
+        if (kq) {
+            kq = ValidControl(txtsonguoidudoan, "Bạn chưa nhap số người tham gia")
+        }
+        if (kq) {
+            thongbao.innerHTML = "Cảm ơn bạn đã đăng ký"
+        }
+
+    }
+</script>
+
+<body>
+    <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+    <form action="" on>
+        <table>
+            <tr>
+                <td align="right">Họ Tên:</td>
+                <td><input id="txthoten" autofocus style="width: 220px;" type="text"></td>
+            </tr>
+            <tr>
+                <td align="right">Địa Chỉ:</td>
+                <td><textarea id="txtdiachi" cols="40" rows="3" maxlength="50"></textarea> </td>
+            </tr>
+            <tr>
+                <td align="right">Điện Thoại:</td>
+                <td><input id="txtsdt" type="text"></td>
+            </tr>
+            <tr>
+                <td align="right">Giới Tính:</td>
+                <td>
+                    <input type="radio" name="gioitinh" value="Nam" checked>Nam
+                    <input type="radio" name="gioitinh" value="Nu">Nu
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Nghề nghiệp:</td>
+                <td>
+                    <select name="nghenghiep" id="txtnghenghiep">
+                    <option value="1">Giáo Viên</option>
+                    <option value="2">Học sinh</option>
+                    <option value="3">Sinh Viên </option>
+                    <option value="4">Kỹ sư</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Chọn sản phẩm tham gia:</td>
+                <td>
+                    <select id="txtsanpham" name="sanpham" multiple style="width: 220px;">
+                    <option value="1" selected >Kem Đánh Răng</option>
+                    <option value="2">Bột Giặt</option>
+                    <option value="3">Dầu gội đầu </option>
+                    <option value="4">Sữa TẮm</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Số người dự đoán:</td>
+                <td><input id="txtsonguoidudoan" type="number"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input style="padding: 5px 20px; border-radius: 15px; background-image: linear-gradient(rgb(47, 0, 255),rgb(0, 195, 255)); border: groove 2px rgb(230, 230, 230); color: white; font-weight: 700;" onclick="ValidForm()" type="button" value="Đồng ý">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" style="color: red; height: 30px;"> <label id="thongbao"> </label></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

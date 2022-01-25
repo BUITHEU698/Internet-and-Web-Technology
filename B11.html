@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            background: url(img/login.jpg) right center no-repeat;
+            background-size: contain;
+            border-spacing: 2px 15px;
+            width: 80%;
+        }
+        
+        form {
+            border: 2px dotted red;
+            width: 50%;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+        
+        th {
+            color: red;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            outline: none;
+            border: 1px dotted red;
+            border-radius: 10px;
+            background-color: rgba(255, 157, 157, 0.562);
+            padding: 5px;
+            width: 70%;
+        }
+        
+        .bntdangnhap {
+            background-image: linear-gradient(#BD0003, red);
+            color: white;
+            border: 15px;
+            border-radius: 15px;
+            padding: 6px;
+            border: 3px groove;
+            width: 100px;
+        }
+    </style>
+    <script>
+        function GuiThongTin() {
+
+            if (txtdangnhap.value == "") {
+
+                thongbao.innerHTML = "Bạn chưa nhập tên đăng nhập";
+                txtdangnhap.focus();
+                return;
+            }
+            if (txtmatkhau.value == "") {
+
+                thongbao.innerHTML = "Bạn chưa nhập mật khẩu";
+                txtmatkhau.focus();
+                return;
+            }
+
+            if (txtdangnhap.value.toLowerCase() == "phamhoangthu" && txtmatkhau.value == "1234") {
+                thongbao.innerHTML = "chào Bạn <b><i>" + txtdangnhap.value + '</i></b>';
+            } else
+                thongbao.innerHTML = "Thông tin đăng nhập không hợp lệ"
+
+        }
+
+        function LamLai() {
+            thongbao.innerHTML = "";
+            txtdangnhap.focus();
+            txtdangnhap.value = "";
+            txtmatkhau.value = "";
+        }
+    </script>
+</head>
+
+<body onload="txtdangnhap.focus()">
+    <div>
+        <form name="formdangnhap" id="formdangnhap" method="get">
+            <table align="center">
+                <tr>
+                    <th colspan="2" align="center" style="padding-bottom: 30px;"> Form đăng nhập
+                </tr>
+                <tr>
+                    <td style="text-align: right;"> Tên người dùng:</td>
+                    <td><input placeholder="Tên Đăng Nhập" id="txtdangnhap" type="text"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Mật khẩu:</td>
+                    <td><input placeholder="TMật khẩu" id="txtmatkhau" type="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input class="bntdangnhap" value="Đăng Nhập" type="submit" name="btndangnhap" id="btdangnhap" onClick="GuiThongTin();"></input>
+                        <input class="bntdangnhap" value="Làm Lại" type="button" name="btndangnhap" id="btdangnhap" onClick="LamLai();"> </input>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" style="color: red; height: 30px;"> <label id="thongbao">    </label></td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

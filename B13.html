@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: blue;
+        }
+        
+        form {
+            width: 40%;
+            margin: 0 auto;
+        }
+        
+        table {
+            width: 570px;
+            margin: 0 auto;
+            background-color: RGB(255, 255, 205);
+            border-collapse: collapse;
+        }
+        
+        td {
+            border: 1px solid blue;
+        }
+        
+        td {
+            padding: 3px;
+        }
+        
+        tr {
+            height: 40px;
+        }
+        
+        caption {
+            text-align: center;
+            color: rgb(0, 4, 255);
+            font-size: 25px;
+            font-weight: 700;
+            margin: 10px;
+        }
+        
+        input,
+        textarea,
+        select {
+            outline: none;
+        }
+    </style>
+    <script>
+        function ValidControl(ctrl, msg) {
+
+            if (ctrl.value == "" || ctrl.value == null) {
+                alert(msg)
+                ctrl.focus()
+                return false
+            }
+            return true
+        }
+
+        function ValidForm() {
+            var kq = ValidControl(txthoten, 'Bạn chưa nhập tên');
+            if (kq) {
+                kq = ValidControl(txtdiachi, "Bạn chưa nhập địa chỉ")
+            }
+            if (kq) {
+                kq = ValidControl(txtsdt, "Bạn chưa nhập số điện thoại")
+            }
+            if (kq) {
+                kq = ValidControl(nguoilon, "Bạn chưa nhập số người lớn trong đoàn khách")
+            }
+            if (kq) {
+                kq = ValidControl(treem, "Bạn chưa nhập số người lớn trong đoàn khách")
+            }
+            if (kq) {
+                thongbao.innerHTML = "Bạn đã đăng ký thành công!!!"
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    v
+    <table>
+        <caption>ĐĂNG KÝ DU LỊCH</caption>
+        <tr>
+            <td style=" width: 40%;">Họ Tên</td>
+            <td><input style="width: 270px;" id="txthoten" autofocus type="text"></td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><textarea id="txtdiachi" style="width:320px;" cols="40" rows="5" maxlength="50"></textarea></td>
+        </tr>
+        <tr>
+            <td>Số Điện Thoại</td>
+            <td><input id="txtsdt" type="text"></td>
+        </tr>
+        <tr>
+            <td>Khach Việt Nam</td>
+            <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+            <td>Chọn tour</td>
+            <td>
+                <select id="chontour" name="" style="width: 250px;
+                    ">
+                        <optgroup label="Miền Bắc">
+                            <option value="1" selected >Miền Bắc Hà Nội - Hạ Long - Sapa</option>
+                            <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="3">Hà Nội - Cát Bà - Tuần Châu </option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option value="1" selected >Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="2">Nha Trang - Đà Lạt Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền nam">
+                            <option value="1" selected >TpHCM - Cần Thơ - Cà Mau</option>
+                            <option value="2">Phú Quốc - Côn Đảo</option>
+                        </optgroup>
+                    </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Phương tiện</td>
+            <td>
+                <input type="radio" name="Phương tiện" value="" checked>Máy bay
+                <input type="radio" name="Phương tiện" value="Nu">Xe du lịch
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 10px 100px;">
+                <fieldset>
+                    <legend>Thông tin nhân:</legend>
+                    <label for="nguoilon">Người lớn</label>
+                    <input style=" width: 100px;" type="number" id="nguoilon" name="nguoilon">
+                    <label for="treem">Trẻ em</label>
+                    <input id="treem" style=" width: 100px;" type="number">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>Ghi chú thêm</td>
+            <td><textarea id="txtghichu" style="width:320px;" cols="40" rows="5" maxlength="50"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input onclick="ValidForm()" type="button" value="Đồng ý">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" style=" font-weight: 700; color: rgb(211, 0, 0); height: 30px;"> <label id="thongbao"> </label></td>
+        </tr>
+
+    </table>
+    </form>
+
+</body>
+
+</html>
