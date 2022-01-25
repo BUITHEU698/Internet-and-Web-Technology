@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 35px;
+}
+
+.text {
+    flex: 2;
+    padding-right: 200px;
+}
+
+.img {
+    flex: 1
+}
+
+button {
+    padding: 5px;
+}
+
+h1 {
+    color: blue;
+}

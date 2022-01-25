@@ -1,0 +1,39 @@
+
+img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h4 {
+    color: black;
+}
+
+ul {
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 45%;
+    font-size: 14px;
+    color: darkgray;
+    margin: auto;
+    line-height: 20px;
+    background-color: rgba(226, 226, 226, 0.205);
+    list-style-type: none;
+}
+
+.img {
+    width: 20%;
+}
+
+.nd {
+    width: 80%;
+}
+
+hr {
+    margin: 0px;
+    border: 1px dotted rgb(255, 173, 173);
+}
+
+li {
+    padding: 20px;
+    display: flex;
+}

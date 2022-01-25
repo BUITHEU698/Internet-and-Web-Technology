@@ -1,0 +1,22 @@
+form {
+    width: 300px;
+    margin: auto;
+    background-color: black;
+    color: rgb(212, 211, 211);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#user,
+#password {
+    background-color: rgb(82, 77, 81);
+    color: white;
+    margin: 10px;
+}
+
+#dangnhap {
+    background-color: rgb(231, 76, 60);
+    padding: 10px;
+    color: white;
+    margin-left: 106px;
+}

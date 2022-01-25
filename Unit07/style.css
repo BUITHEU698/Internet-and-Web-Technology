@@ -1,0 +1,36 @@
+header {
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 100px;
+    font-size: 13px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    flex: 2;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu li {
+    flex: 1;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu ul li a {
+    color: rgb(180, 174, 174);
+}

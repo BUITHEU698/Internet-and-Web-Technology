@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <br><br>
+    <div class="container">
+        <div class="head">
+            <h2>TÍNH CHỈ SỐ BMI</h2>
+        </div>
+       <form action="">
+            <ul><br>
+                <li>
+                    <label> Nhập cân nặng ?</label><br>
+                    <input type="text" id="can_nang">
+                </li><br>
+                <li>
+                    <label> Nhập chiều cao ?</label><br>
+                    <input type="text" id="chieu_cao">
+                </li>
+                <br>
+                <li>
+                    <label> Nhập loại tuổi ?</label><br>
+                    <select id="tuoi">
+                        <option value="1">Trung niên</option>
+                        <option value="1">Trung niên, già lớn tuổi</option>
+                        <option value="1">già, lớn tuổi</option>
+                    </select>
+                </li>
+            </ul>
+            <br>
+            <button type="button" onclick="tinhchiso_bmi()">Tính BMI</button><br>
+        </form> 
+        <div class="ketqua">
+            <br>
+            <label >Kết quả</label><br>
+            <div class="BMI">
+                <label id="bmi"></label><br>
+            </div>
+            <div class="phanloai">
+                <label class="phanloai" id="phanLoai"></label><br>
+            </div>
+            <div class="mucdo">
+                <label class="mucdo" id="mucdo"></label>
+            </div>
+        </div>
+           
+   
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

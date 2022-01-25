@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.khung {
+    width: 65%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid darkgray;
+}
+
+img {
+    width: 100%;
+}
+
+.docthem {
+    background-color: skyblue;
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+}
+
+.tho {
+    margin-left: 40px;
+}
+
+p {
+    color: rgb(129, 129, 129);
+    font-size: 15px
+}

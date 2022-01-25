@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="coban1" >
+       
+        <h2>GIAI PHUONG TRINH BAC 1</h2>
+        <form>
+            <input class="a" placeholder="Hệ số a" id= "a_1" type="text"><br>
+            <input class="b" placeholder="Hệ số b" id= "b_1" type="text"><br>
+            <input  class="button" type="button" id="gptb1"  value="GIAI PHUONG TRINH">
+        </form>
+        <p>
+            KET QUA: 
+            <span id = "kq_1"></span>
+        </p>
+    </div>
+
+    <div class="coban2" >
+       
+        <h2>GIAI PHUONG TRINH BAC 2</h2>
+        <form>
+            <input class="a" placeholder="Hệ số a" id= "a_2" type="text"><br>
+            <input class="b" placeholder="Hệ số b" id= "b_2" type="text"><br>
+            <input class="c" placeholder="Hệ số c" id= "c_2" type="text"><br>
+            <input onClick="giai_ptbac2()" class="button" type="button" id="gptb2"  value="GIAI PHUONG TRINH">
+        </form>
+        <p>
+            KET QUA: 
+            <span id = "kq_2"></span>
+        </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

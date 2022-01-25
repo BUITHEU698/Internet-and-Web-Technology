@@ -1,0 +1,61 @@
+.login {
+    width: 350px;
+    margin: auto;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgray;
+    line-height: 30px;
+}
+
+body {
+    background-color: rgb(185, 253, 255);
+}
+
+h2 {
+    margin-top: 5px;
+    text-align: center;
+    color: blue;
+}
+.header >p{
+    color:rgb(255, 255, 255);
+    font-size: 25px; 
+    margin-bottom: 10px;
+}
+.header {
+    padding: 20px;
+    background-color: rgba(255, 38, 226, 0.575);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+input {
+    width: 90%;
+    background-color: rgba(105, 105, 105, 0.116);
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.emai,
+.pass {
+    padding-bottom: 10px;
+}
+
+button {
+    margin-left: 100px;
+    width: 100px;
+    
+    border-radius: 3px;
+    background-color: aqua;
+    border: none;
+    padding: 8px;
+}
+
+.nhaplieu {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    padding-top: 10;
+}

@@ -1,0 +1,38 @@
+.khung {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    color: #fff;
+    margin: 0 auto;
+    border: 1px solid rgb(230, 230, 230);
+    background-image: url(../img/Bau-troi-day-sao-1.jpg);
+    padding-top: 50px;
+    line-height: 60px;
+}
+
+.cha {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    font-size: 14px;
+    color: rgb(255, 196, 32);
+}
+
+.cha li {
+    flex-basis: 25%;
+}
+
+.con {
+    padding-left: 0px;
+}
+
+i {
+    font-size: 40px;
+}
+
+#so {
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none;
+}

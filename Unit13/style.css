@@ -1,0 +1,46 @@
+.footer {
+    display: flex;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-size: 13px;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+
+hr {
+    border: 1px solid rgba(185, 185, 185, 0.205);
+    size: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.box1 {
+    margin-left: 20px;
+    flex: 2;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.box2 {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.box3 {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.box4 {
+    margin-left: 20px;
+    flex: 1;
+}

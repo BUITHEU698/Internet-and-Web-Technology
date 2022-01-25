@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    margin: 10px 0;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.tren h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: blue;
+}
+
+.duoi {
+    display: flex;
+}
+
+.trai {
+    flex: 1;
+    margin: 10px;
+}
+
+ul {
+    color: darkgrey;
+}
+
+li {
+    margin: 15px;
+}
+
+i {
+    min-width: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.phai {
+    flex: 1.7;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.phai h4 {
+    color: blueviolet
+}
+
+input,
+textarea,
+button {
+    margin: 10px;
+}
+
+input,
+textarea {
+    padding: 5px 10px;
+    outline: none;
+}
+
+button {
+    max-width: 120px;
+    padding: 10px 0px;
+    background-color: #5f9ea0;
+    color: white;
+}
+
+button:hover {
+    opacity: .7;
+}
